@@ -87,7 +87,7 @@ async function handleLogin() {
 }
 
 h1 {
-  color: #642db8;
+  color: #bb0707;
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
@@ -119,7 +119,7 @@ h1 {
 
 .field input:focus {
   outline: none;
-  border-color: #642db8;
+  border-color: #bb0707;
   box-shadow: 0 0 0 4px rgba(100, 45, 184, 0.12);
 }
 
@@ -127,7 +127,7 @@ button {
   height: 54px;
   border: none;
   border-radius: 12px;
-  background: #642db8;
+  background: #bb0707;
   color: white;
   font-size: 1rem;
   font-weight: 600;

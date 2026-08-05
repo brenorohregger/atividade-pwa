@@ -205,13 +205,13 @@ function handleCancel() {
 }
 
 .task-input:focus {
-  border-color: #642db8;
+  border-color: #bb0707;
   box-shadow: 0 0 0 3px rgba(100, 45, 184, 0.15);
 }
 
 .task-button {
   padding: 12px 20px;
-  background-color: #642db8;
+  background-color: #bb0707;
   color: white;
   border: none;
   border-radius: 8px;

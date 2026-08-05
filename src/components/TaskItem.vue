@@ -159,7 +159,7 @@ defineEmits(['toggle', 'remove', 'edit'])
 }
 
 .img-indicator:hover {
-  color: #642db8;
+  color: #bb0707;
   background-color: #f1edfa;
 }
 

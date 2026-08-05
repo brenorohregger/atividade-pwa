@@ -34,13 +34,13 @@ function handleLogout() {
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
-  border-bottom: 3px solid #642db8;
+  border-bottom: 3px solid #bb0707;
   margin-bottom: 24px;
 }
 
 .app-header h1 {
   font-size: 1.4rem;
-  color: #642db8;
+  color: #bb0707;
 }
 
 nav {
@@ -56,7 +56,7 @@ nav a {
 }
 
 nav a.router-link-active {
-  color: #642db8;
+  color: #bb0707;
 }
 nav button {
   text-decoration: none;
