@@ -1,17 +1,4 @@
-Aqui está o seu arquivo `TaskItem.vue` totalmente repaginado e corrigido.
 
-### 🛠️ O que mudou?
-
-* **Correção da Imagem Gigante:** A imagem dentro do dialog agora tem um controle inteligente de tamanho máximo (`max-width: 400px` e `max-height: 70vh`), impedindo que ela quebre o layout e garantindo que ela mantenha a proporção original (`object-fit: contain`).
-* **Visual do Dialog Modernizado:** Transformei o dialog em um modal elegante centralizado na tela, adicionando um efeito de fundo semi-transparente fosco (`backdrop-filter`) para dar destaque à imagem.
-* **Botão "Fechar" Estilizado:** Deixou de ser um botão simples de sistema e ganhou um visual limpo, com cantos arredondados, transição suave de cor e posicionamento correto.
-* **Responsividade (Mobile First):** Adicionei regras de `@media` para telas menores que 480px. No celular, o dialog se ajusta para ocupar quase toda a largura da tela (`width: 90%`), e a imagem diminui proporcionalmente sem transbordar, mantendo a interface impecável.
-
----
-
-### `TaskItem.vue` Refatorado
-
-```html
 <template>
   <div class="task-item" :class="{ done: task.done }">
     <button v-if="task.img_url" class="img-indicator" @click="showImage = true" title="Ver imagem">
@@ -57,7 +44,7 @@ defineEmits(['toggle', 'remove', 'edit'])
 </script>
 
 <style scoped>
-/* Estrutura do item da lista */
+
 .task-item {
   display: flex;
   justify-content: space-between;
@@ -79,14 +66,13 @@ defineEmits(['toggle', 'remove', 'edit'])
   opacity: 0.55;
 }
 
-/* Área reativa do checkbox e texto */
 .task-label {
   display: flex;
   align-items: center;
   gap: 12px;
   cursor: pointer;
   flex: 1;
-  min-width: 0; /* Evita que o texto quebre o flexbox */
+  min-width: 0; 
 }
 
 .task-label input[type='checkbox'] {
@@ -143,7 +129,6 @@ defineEmits(['toggle', 'remove', 'edit'])
   background-color: #fdecea;
 }
 
-/* Indicador com ícone de Câmera */
 .img-indicator {
   background: none;
   border: none;
@@ -163,7 +148,7 @@ defineEmits(['toggle', 'remove', 'edit'])
   background-color: #f1edfa;
 }
 
-/* --- MODAL / DIALOG CUSTOMIZADO --- */
+
 .image-dialog {
   position: fixed;
   top: 0;
